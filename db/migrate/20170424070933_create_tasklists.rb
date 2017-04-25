@@ -1,9 +1,5 @@
 class CreateTasklists < ActiveRecord::Migration[5.0]
   def change
-    create_table :tasklists do |t|
-      t.string :content
-
-      t.timestamps
-    end
+   add_column :tasklists, :title, :string
   end
 end

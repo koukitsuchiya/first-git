@@ -2,9 +2,10 @@
 <%= @tasklist.id %>
  のメッセージ詳細ページ</h1>
 
-<p>
-<%= @tasklist.content %>
-</p>
+<p>タイトル: <%= @tasklist.title %></p>
+<p>メッセージ: <%= @tasklist.content %></p>
+<p>ステータス: <%= @tasklist.title %></p>
+
 
 <%= link_to '一覧に戻る', tasklists_path %>
 
