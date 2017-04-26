@@ -41,6 +41,7 @@ class TasklistsController < ApplicationController
   end
    
   def destroy
+    set_tasklist
     @tasklist.destroy
 
     flash[:success] = 'Tasklist は正常に削除されました'
