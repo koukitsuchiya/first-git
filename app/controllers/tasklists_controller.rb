@@ -9,6 +9,7 @@ class TasklistsController < ApplicationController
 
   def new
       @tasklist = Tasklist.new
+    
   end
 
   def create
