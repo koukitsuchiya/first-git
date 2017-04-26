@@ -52,6 +52,6 @@ private
     end
   # Strong Parameter
   def tasklist_params
-    params.require(:tasklist).permit(:content, :status)
+    params.require(:tasklist).permit(:content, :statuss)
   end
 end

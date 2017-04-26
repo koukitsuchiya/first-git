@@ -19,4 +19,5 @@ ActiveRecord::Schema.define(version: 20170426040456) do
     t.string   "status"
   end
 
+
 end
