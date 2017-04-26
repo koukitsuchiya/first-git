@@ -45,14 +45,13 @@ class TasklistsController < ApplicationController
 
     flash[:success] = 'Tasklist は正常に削除されました'
     redirect_to tasklists_url
-end
+  end
 private
     def set_tasklist
     @tasklist = Tasklist.find(params[:id])
-  end
-
+    end
   # Strong Parameter
   def tasklist_params
-    params.require(:tasklist).permit(:content, :title)
+    params.require(:tasklist).permit(:content, :status)
   end
 end

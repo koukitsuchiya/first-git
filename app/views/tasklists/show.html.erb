@@ -1,15 +1,13 @@
 <h1>id = 
 <%= @tasklist.id %>
- のメッセージ詳細ページ</h1>
+ のタスクリスト詳細ページ</h1>
  
-
-<p>タイトル: <%= @tasklist.title %></p>
-<p>メッセージ: <%= @tasklist.content %></p>
-<p>ステータス: <%= @tasklist.title %></p>
+<p>タスクリスト: <%= @tasklist.content %></p>
+<p>ステータス: <%= @tasklist.status%></p>
 
 
 <%= link_to '一覧に戻る', tasklists_path %>
 
-<%= link_to 'このメッセージを編集する', edit_tasklist_path(@tasklist) %>
+<%= link_to 'このタスクリストを編集する', edit_tasklist_path(@tasklist) %>
 
-<%= link_to 'このメッセージを削除する', @tasklist, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %>
+<%= link_to 'このタスクリストを削除する', @tasklist, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %>

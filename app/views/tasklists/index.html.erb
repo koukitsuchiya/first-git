@@ -1,10 +1,20 @@
-<h1>メッセージ一覧</h1>
+<h1>タスクリスト一覧</h1>
 
 <ul>
-  <% @tasklists.each do |tasklist| %>
-    <li><%= link_to tasklist.id, tasklist %> : <%= tasklist.title %> > <%= tasklist.content %></li>
-  <% end %>
+  
+<% @tasklists.each do |tasklist| %>
+
+    <li>
+<%= link_to tasklist.id, tasklist %>
+ : 
+ > 
+<%= tasklist.content %>
+ >
+<%= tasklist.status %>
+</li>
+  
+<% end %>
+
 </ul>
-<%= paginate @tasklists %>
 
 <%= link_to '新規メッセージの投稿', new_tasklist_path %>
